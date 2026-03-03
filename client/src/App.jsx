@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/home";
 import ServicesSection from "./pages/ServicesSection/ServicesSection";
 import Loader from "./components/Loader";
+import ContactPage from "./pages/Contacts/ContactPage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -25,6 +26,7 @@ function App() {
       <Navbar />
       <HomePage />
       <ServicesSection />
+      <ContactPage />
     </>
   );
 }
