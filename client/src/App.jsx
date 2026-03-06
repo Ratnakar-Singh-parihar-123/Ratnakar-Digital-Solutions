@@ -7,8 +7,14 @@ import Loader from "./components/Loader";
 
 import HomePage from "./pages/home";
 import ServicesSection from "./pages/ServicesSection/ServicesSection";
-import ContactPage from "./pages/Contacts/ContactPage";
+import ContactPage from "./pages/Contacts/ContactSection";
 import Career from "./pages/career/CareerPage";
+import Register from "./pages/auth/Register";
+import Login from "./pages/auth/Login";
+import AboutSection from "./pages/about/AboutSection";
+import ContactSection from "./pages/Contacts/ContactSection";
+import ProductsPage from "./pages/Products/ProductsPage";
+import DealsPage from "./pages/Deals/DealsPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -54,7 +60,13 @@ function App() {
             }
           />
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutSection />} />
           <Route path="/career" element={<Career />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/contact" element={<ContactSection />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/deals" element={<DealsPage />} />
         </Routes>
       </main>
 
